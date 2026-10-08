@@ -1,0 +1,64 @@
+/* Màu chữ mặc định để đảm bảo tương phản (tránh lỗi Wave Validator) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+/* Kiểu của thẻ li ở bài tập 1 */
+
+/* Đảm bảo màu chữ đủ tương phản để vượt qua Wave Validator */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+/* YÊU CẦU 1: Comment out the existing styling for the li element */
+/* 
+li {
+    list-style-type: square;
+    font-weight: bold;
+    color: #333333;
+} 
+*/
+
+/* YÊU CẦU 2: Change the nav element to use inline-block and have a width of about 80% */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* YÊU CẦU 3: Use a descendent selector to style only the image in the nav */
+nav img {
+    width: 10%;
+}
+
+/* YÊU CẦU 4 & 6: Style the grid class (2 cột, 40%) và chỉnh justify-content, align-items, row-gap */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center; /* Căn giữa toàn bộ grid */
+    align-items: center;     /* Căn giữa nội dung theo chiều dọc */
+    row-gap: 20px;           /* Khoảng cách giữa các hàng */
+}
+
+/* YÊU CẦU 5: Use the descendent selector to style only the images in the grid class */
+.grid img {
+    width: 100%;
+}
+
+/* YÊU CẦU 7: Style the flex class */
+.flex {
+    display: flex;
+    flex-wrap: wrap;              /* Cho phép rớt dòng nếu thiếu chỗ */
+    justify-content: space-around; /* Chia đều khoảng cách giữa các phần tử */
+}
+/* Các class đang để trống để bạn làm Bài tập 2 */
+.grid {
+    /* Bạn sẽ thêm CSS cho grid ở đây */
+}
+
+.flex {
+    /* Bạn sẽ thêm CSS cho flex ở đây */
+}
